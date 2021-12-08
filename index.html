@@ -1213,7 +1213,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </ul>
 <h2 id="用交换机构建-lan">用交换机构建 LAN</h2>
 <p>构建如下拓扑结构的局域网：</p>
-<p><img src="http://10.1.74.238/network/netlab/img/d703203be531d775.png" alt="qige1" title="qige1"></p>
+<p><img src="https://githubgodfather.github.io/ComputerNetwork3/png/qige1.png" alt="qige1" title="qige1"></p>
 <p><img src="https://githubgodfather.github.io/ComputerNetwork3/png/1.png" alt="图1" title="图1"></p>
 <blockquote>
 <p>问题</p>
@@ -1249,7 +1249,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <p><a href="#cisco-packet-tracer-%E5%AE%9E%E9%AA%8C">回到顶部</a></p>
 <h2 id="路由器配置初步">路由器配置初步</h2>
 <p>我们模拟重庆交通大学和重庆大学两个学校的连接，构建如下拓扑：</p>
-<p><img src="http://10.1.74.238/network/netlab/img/2d19ce3e61c1328f.png" alt="qige2" title="qige2"></p>
+<p><img src="https://githubgodfather.github.io/ComputerNetwork3/png/qige2.png" alt="qige2" title="qige2"></p>
 <p><img src="https://githubgodfather.github.io/ComputerNetwork3/png/6.png" alt="图6" title="图6"></p>
 <blockquote>
 <p>问题</p>
@@ -1313,7 +1313,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <p>VLAN（Virtual Local Area Network）即虚拟局域网。通过划分 VLAN，我们可以把一个物理网络划分为多个逻辑网段即多个子网。</p>
 <p>划分 VLAN 后可以杜绝网络广播风暴，增强网络的安全性，便于进行统一管理等。</p>
 <p>在 CPT 中构建如下图所示拓扑：</p>
-<p><img src="http://10.1.74.238/network/netlab/img/53aae5b14f634f1e.png" alt="qige3" title="qige3"></p>
+<p><img src="https://githubgodfather.github.io/ComputerNetwork3/png/qige3.png" alt="qige3" title="qige3"></p>
 <p>Cisco 2960 交换机是支持 VLAN 的交换机，共有 24 个 100M 和 2 个 1000M 以太网口。默认所有的接口都在 VLAN 1 中，故此时连接上来的计算机都处于同一 VLAN，可以进行通信。</p>
 <p>下面我们就该交换机的 24 个 100M 接口分为 3 个部分，划分到 3 个不同的 VLAN 中，id 号分别设为 10、20、30，且设置别名（computer、communication、electronic）以利于区分和管理。</p>
 <p><img src="https://githubgodfather.github.io/ComputerNetwork3/png/19.png" alt="图19" title="图19"></p>
@@ -1325,7 +1325,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <p>VTP（VLAN Trunk Protocol）即 VLAN 中继协议。VTP 通过 ISL 帧或 Cisco 私有 DTP 帧（可查阅相关资料了解）保持 VLAN 配置统一性，也被称为虚拟局域网干道协议，它是思科私有协议。 VTP 统一管理、增加、删除、调整VLAN，自动地将信息向网络中其它的交换机广播。</p>
 <p>此外，VTP 减小了那些可能导致安全问题的配置，只要在 VTP Server 做相应设置，VTP Client 会自动学习 VTP Server 上的 VLAN 信息。</p>
 <p>为演示 VTP，重新构建如下拓扑结构：</p>
-<p><img src="http://10.1.74.238/network/netlab/img/6b0ab4595d1e01c6.png" alt="qige4" title="qige4"></p>
+<p><img src="https://githubgodfather.github.io/ComputerNetwork3/png/qige4.png" alt="qige4" title="qige4"></p>
 <p><img src="https://githubgodfather.github.io/ComputerNetwork3/png/21.png" alt="图21" title="图21"></p>
 <p>至此，VTP 配置完成。同 VLAN 可以 ping 通，而不同 VLAN 不行（即使在同一交换机下，如从 PC0 到 PC1），且能够方便的统一规划和管理。</p>
 <p><img src="https://githubgodfather.github.io/ComputerNetwork3/png/22.png" alt="图22" title="图22"></p>
@@ -1338,14 +1338,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <p><a href="#cisco-packet-tracer-%E5%AE%9E%E9%AA%8C">回到顶部</a></p>
 <h2 id="dhcpdns-及-web-服务器简单配置">DHCP、DNS 及 Web 服务器简单配置</h2>
 <p>动态主机配置 DHCP、域名解析 DNS 以及 Web 服务在日常应用中作用巨大，我们构建如下简单的拓扑来进行练习。</p>
-<p><img src="http://10.1.74.238/network/netlab/img/28b13e58b1c50cf6.png" alt="qige5" title="qige5"></p>
+<p><img src="https://githubgodfather.github.io/ComputerNetwork3/png/qige5.png" alt="qige5" title="qige5"></p>
 <p>该拓扑中，服务器及客户机都连在同一交换机上。为简单起见，服务器 Server-PT 同时作为 DHCP、DNS 以及 Web 服务器，各客户机无需配置，将自动获取网络配置。</p>
 <p><img src="https://githubgodfather.github.io/ComputerNetwork3/png/24.png" alt="图24" title="图24"></p>
 <p><a href="#cisco-packet-tracer-%E5%AE%9E%E9%AA%8C">回到顶部</a></p>
 <h2 id="wlan-初步配置">WLAN 初步配置</h2>
 <p>WLAN 即 WiFi 当前也是广泛的应用在各种场景。</p>
 <p>我们通过构建如下拓扑的一个家庭 WLAN 来练习一下其相关的配置：</p>
-<p><img src="http://10.1.74.238/network/netlab/img/649a26a691bfaf8e.png" alt="qige6" title="qige6"></p>
+<p><img src="https://githubgodfather.github.io/ComputerNetwork3/png/qige6.png" alt="qige6" title="qige6"></p>
 <p>一般地，我们需要配置无线路由器的基本网络配置（IP、掩码、网关、DNS 等，现实中多为自动获取），然后再配置无线路由器的无线访问部分如连接密码及加密类型等，并开启 DHCP 功能等。有关配置请参考相关资料。</p>
 <p><img src="https://githubgodfather.github.io/ComputerNetwork3/png/26.png" alt="图26" title="图26"></p>
 <p><img src="https://githubgodfather.github.io/ComputerNetwork3/png/25.png" alt="图25" title="图25"></p>
